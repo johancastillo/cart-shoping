@@ -3,7 +3,8 @@
 }
 
 .icon{
-    color: #212529;
+    color: #212529 !important;
+    font-size: 25px !important;
 }
 
 .cart{
@@ -12,7 +13,7 @@
 
 .cart-num{
     position: absolute;
-    top: -24px;
+    top: -18px;
     left: 64%;
     border-radius: 50%;
     width: 15px;
@@ -29,10 +30,6 @@
     z-index: 1020;
 }
 
-.navbar.one{
+.navbar{
     padding-bottom: 0;
-}
-
-.navbar.two{
-    padding-top: 0;
 }

@@ -112,7 +112,10 @@ class ProductCard extends Component{
 
                         <br/>
 
-                        <button type="button" class="btn btn-outline-success btn-block">
+                        <button type="button" class="btn btn-outline-success btn-block"
+                        style={{
+                          fontSize: "15px"
+                        }}>
                           Añadir al carrito
                         </button>
                         

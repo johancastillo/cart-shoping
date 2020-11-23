@@ -27,7 +27,7 @@ class NavegationMobile extends Component{
     render(){
         return (
             <Fragment>
-            <nav className="navbar one navbar-expand-lg navbar-light bg-light sticky-top">
+            <nav className="navbar shadow-nav navbar-expand-lg navbar-light bg-light sticky-top">
                 <div>
                         {/** Menu */}
                         <span className="icon-menu" style={{
@@ -36,7 +36,7 @@ class NavegationMobile extends Component{
                         }} onClick={this.handleClick}></span>
                     
                     <Link to="/" className="navbar-brand ml-2" href="#">
-                        <img src={Logo} width="198" height="100" alt="logo" loading="lazy" />
+                        <img src={Logo} width="162" height="100" alt="logo" loading="lazy" />
                     </Link>
                 </div>
 
@@ -65,26 +65,15 @@ class NavegationMobile extends Component{
                 </div>
 
                 <div>
-                    <Link to="/mycount"><span className="icon icon-user" style={{fontSize: '32px'}}></span></Link>
+                    <Link to="/mycount"><span className="icon icon-search ml-3"></span></Link>
+                    <Link to="/mycount"><span className="icon icon-user ml-3"></span></Link>
                     <Link className="cart" to="/cart">
-                        <span className="icon icon-ct-cart ml-2" style={{fontSize: '32px'}}></span>
+                        <span className="icon icon-ct-cart ml-3"></span>
                         <span class="badge badge-warning cart-num">0</span>    
                     </Link>
                     
                 </div>    
             </nav>
-
-            <nav class="navbar two shadow-nav sticky-top-2 navbar-expand-lg navbar-light bg-light">
-  
-  
-
-    
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  
-</nav>
             </Fragment>
         )
     }
