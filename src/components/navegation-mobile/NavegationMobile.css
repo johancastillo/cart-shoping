@@ -5,3 +5,19 @@
 .icon{
     color: #212529;
 }
+
+.cart{
+    position: relative;
+}
+
+.cart-num{
+    position: absolute;
+    top: -24px;
+    left: 64%;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}

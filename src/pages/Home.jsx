@@ -18,7 +18,7 @@ class Home extends Component{
         // Map for each of the products
         const data = this.state.products.map((product, i) => {
             return (
-                <div className="col-6 col-md-2">
+                <div className="col-6 col-md-4 col-lg-3 col-xl-2">
                         <ProductCard  
                         title={product.name}
                         stars={product.stars}

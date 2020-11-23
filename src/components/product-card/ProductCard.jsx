@@ -86,12 +86,14 @@ class ProductCard extends Component{
 
         // Return View
         return(
-          <Link to="/product">
+          
             <div className="card mb-4">
-
+                  
+                  <Link to="/product">
                   <div className="color-gris">  
                     <img src={this.props.image} className="card-img-top p-2" alt="..." />
                   </div>
+                  </Link>
 
                     <div className="card-body">
 
@@ -117,7 +119,7 @@ class ProductCard extends Component{
 
                     </div>
                 </div>
-                </Link>
+                
         )
     }
 }
