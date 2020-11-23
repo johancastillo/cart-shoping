@@ -1,12 +1,12 @@
 import React from 'react'
 import Format from '../numberFormat'
 import { Card, Image, Label, Button } from 'semantic-ui-react'
-
+import GenericImage from './generic-image.jpg'
 
 function Product(props) {
   return(
     <Card style={{ marginTop: 15 }}>
-      <Image size="small" src={props.picture}  />
+      <Image size="small" src={GenericImage}  />
       <Card.Content>
         <Card.Header style={{fontSize: 15}}>{props.name}</Card.Header>
         <Card.Meta>
