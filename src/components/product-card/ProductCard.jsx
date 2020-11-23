@@ -108,6 +108,11 @@ class ProductCard extends Component{
                           <span className={star.five}></span>
                         </div>
 
+                        <br/>
+
+                        <button type="button" class="btn btn-outline-success btn-block">
+                          Añadir al carrito
+                        </button>
                         
 
                     </div>
