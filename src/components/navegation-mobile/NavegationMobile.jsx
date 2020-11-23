@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import Logo from './logo.svg';
 
 // Styles CSS
@@ -26,7 +26,8 @@ class NavegationMobile extends Component{
 
     render(){
         return (
-            <nav className="navbar navbar-expand-lg navbar-light bg-light mb-2">
+            <Fragment>
+            <nav className="navbar one navbar-expand-lg navbar-light bg-light sticky-top">
                 <div>
                         {/** Menu */}
                         <span className="icon-menu" style={{
@@ -70,8 +71,21 @@ class NavegationMobile extends Component{
                         <span class="badge badge-warning cart-num">0</span>    
                     </Link>
                     
-                </div>
+                </div>    
             </nav>
+
+            <nav class="navbar two shadow-nav sticky-top-2 navbar-expand-lg navbar-light bg-light">
+  
+  
+
+    
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  
+</nav>
+            </Fragment>
         )
     }
 }

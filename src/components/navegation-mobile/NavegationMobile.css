@@ -1,5 +1,5 @@
-.navbar{
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+.shadow-nav{
+    box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
 }
 
 .icon{
@@ -20,4 +20,19 @@
     justify-content: center;
     display: flex;
     align-items: center;
+}
+
+.sticky-top-2 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 107px;
+    z-index: 1020;
+}
+
+.navbar.one{
+    padding-bottom: 0;
+}
+
+.navbar.two{
+    padding-top: 0;
 }
