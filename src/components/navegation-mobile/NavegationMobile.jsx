@@ -12,7 +12,8 @@ class NavegationMobile extends Component{
     constructor(){
         super();
         this.state = {
-            number: 5
+            number: 5,
+            search: false
         }
     }
 
@@ -24,35 +25,28 @@ class NavegationMobile extends Component{
         console.log(this.state.number)
     }
 
+    handleSearch = () => {
+        this.setState({
+            number: this.state.number + 1
+        })
+        console.log(this.state.number)
+    }
+
+    styleNav = {
+        display: "flex"
+    } 
+
+    styleSearch = {
+        display: "none"
+    }
+
     render(){
         return (
             <Fragment>
-            <nav class="navbar shadow-nav navbar-light bg-light sticky-top">
-                <form class="form-inline">
-                    <span class="icon icon-chevron-left"
-                    onClick={() => alert("Back of search")}
-                    style={{
-                        marginRight: "20px"
-                    }}></span>
-
-                    <input class="form-control mr-sm-2 search-input" 
-                    type="search" placeholder="Search" 
-                    aria-label="Search" />
-
-                    <button class="btn btn-outline-success my-2 my-sm-0 search-button" 
-                    type="submit">
-                        <span className="icon-search"
-                        style={{
-                            fontSize: "20px"
-                        }}></span>
-                    </button>
-                </form>
-            </nav>
-
             <nav className="navbar shadow-nav navbar-expand-lg navbar-light bg-light sticky-top"
-            style={{
-                display: "none"
-            }}
+            style={
+                this.styleNav
+            }
             >
                 <div>
                         {/** Menu */}
@@ -101,6 +95,32 @@ class NavegationMobile extends Component{
                     </Link>
                     
                 </div>    
+            </nav>
+
+            <nav class="navbar shadow-nav navbar-light bg-light sticky-top"
+            style={
+                this.styleSearch
+            }
+            >
+                <form class="form-inline">
+                    <span class="icon icon-chevron-left"
+                    onClick={() => alert("Back of search")}
+                    style={{
+                        marginRight: "20px"
+                    }}></span>
+
+                    <input class="form-control mr-sm-2 search-input" 
+                    type="search" placeholder="Search" 
+                    aria-label="Search" />
+
+                    <button class="btn btn-outline-success my-2 my-sm-0 search-button" 
+                    type="submit">
+                        <span className="icon-search"
+                        style={{
+                            fontSize: "20px"
+                        }}></span>
+                    </button>
+                </form>
             </nav>
             </Fragment>
         )
