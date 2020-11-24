@@ -23,13 +23,22 @@
     align-items: center;
 }
 
-.sticky-top-2 {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 107px;
-    z-index: 1020;
+/* .navbar{
+    padding-bottom: 0;
+} */
+
+.search-input{
+    width: 70% !important;
+    border-radius: 0 !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+    margin-right: 0px !important;
 }
 
-.navbar{
-    padding-bottom: 0;
+.search-button{
+    border-radius: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
 }

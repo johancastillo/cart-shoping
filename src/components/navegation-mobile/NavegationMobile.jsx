@@ -27,7 +27,33 @@ class NavegationMobile extends Component{
     render(){
         return (
             <Fragment>
-            <nav className="navbar shadow-nav navbar-expand-lg navbar-light bg-light sticky-top">
+            <nav class="navbar shadow-nav navbar-light bg-light sticky-top">
+                <form class="form-inline">
+                    <span class="icon icon-chevron-left"
+                    onClick={() => alert("Back of search")}
+                    style={{
+                        marginRight: "20px"
+                    }}></span>
+
+                    <input class="form-control mr-sm-2 search-input" 
+                    type="search" placeholder="Search" 
+                    aria-label="Search" />
+
+                    <button class="btn btn-outline-success my-2 my-sm-0 search-button" 
+                    type="submit">
+                        <span className="icon-search"
+                        style={{
+                            fontSize: "20px"
+                        }}></span>
+                    </button>
+                </form>
+            </nav>
+
+            <nav className="navbar shadow-nav navbar-expand-lg navbar-light bg-light sticky-top"
+            style={{
+                display: "none"
+            }}
+            >
                 <div>
                         {/** Menu */}
                         <span className="icon-menu" style={{
@@ -65,11 +91,13 @@ class NavegationMobile extends Component{
                 </div>
 
                 <div>
-                    <Link to="/mycount"><span className="icon icon-search ml-3"></span></Link>
+                    <span className="icon icon-search ml-3"
+                    onClick={() => alert("Hello world")}></span>
+
                     <Link to="/mycount"><span className="icon icon-user ml-3"></span></Link>
                     <Link className="cart" to="/cart">
                         <span className="icon icon-ct-cart ml-3"></span>
-                        <span class="badge badge-warning cart-num">0</span>    
+                        <span className="badge badge-warning cart-num">0</span>    
                     </Link>
                     
                 </div>    
